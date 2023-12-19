@@ -254,6 +254,10 @@ vim.o.completeopt = 'menuone,noselect'
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 
+-- Copilote:
+vim.g.copilot_assume_mapped = true
+
+
 -- [[ Basic Keymaps ]]
 
 -- Keymaps for jump
