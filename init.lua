@@ -521,7 +521,7 @@ local servers = {
   -- rust_analyzer = {},
   -- tsserver = {},
   html = { filetypes = { 'html', 'twig', 'hbs' } },
-
+  jsonls = { filetypes = { 'json', 'jsonc' } },
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
