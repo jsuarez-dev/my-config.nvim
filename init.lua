@@ -331,6 +331,7 @@ local servers = {
   -- gopls = {},
   pyright = {},
   omnisharp = {},
+  eslint = {},
   -- rust_analyzer = {},
   -- tsserver = {},
   html = { filetypes = { 'html', 'twig', 'hbs' } },
