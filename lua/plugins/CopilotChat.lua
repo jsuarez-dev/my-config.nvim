@@ -31,7 +31,6 @@ return {
     opts = {
       prompts = prompts,
       debug = true, -- Enable debugging
-      show_help = "No",
       window = {
         layout = "float",
       },
