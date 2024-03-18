@@ -1,4 +1,4 @@
-local IS_DEV = false
+local IS_DEV = true
 
 local prompts = {
   -- Code related prompts
@@ -21,6 +21,7 @@ local prompts = {
 
 return {
   {
+    dir = IS_DEV and "$PROJECTS_DIR/CopilotChat.nvim" or nil,
     "CopilotC-Nvim/CopilotChat.nvim",
     branch = "canary",
     dependencies = {
@@ -31,7 +32,6 @@ return {
     opts = {
       prompts = prompts,
       debug = true, -- Enable debugging
-      show_help = "No",
       window = {
         layout = "float",
       },
