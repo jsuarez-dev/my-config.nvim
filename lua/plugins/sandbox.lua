@@ -1,7 +1,7 @@
 return {
   "SandboxPlugin",
-  dir = "~/SandboxPlugin.nvim",
+  dir = "$PROJECTS_DIR/SandboxPlugin.nvim",
   config = function()
-    require("SandboxPlugin")
+    require("SandboxPlugin").setup()
   end,
 }
