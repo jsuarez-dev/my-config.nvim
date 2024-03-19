@@ -112,12 +112,6 @@ return {
         end,
         desc = "CopilotChat - Prompt actions",
       },
-      {
-        "<leader>ccp",
-        ":lua require('CopilotChat.integrations.telescope').pick(require('CopilotChat.actions').prompt_actions())<CR>",
-        mode = "x",
-        desc = "CopilotChat - Prompt actions",
-      },
       -- Code related commands
       { "<leader>cce", "<cmd>CopilotChatExplain<cr>",       desc = "CopilotChat - Explain code" },
       { "<leader>cct", "<cmd>CopilotChatTests<cr>",         desc = "CopilotChat - Generate tests" },
