@@ -3,9 +3,10 @@ return {
   dependencies = { "nvim-lua/plenary.nvim" },
   opts = {
   },
-  keys = {
-    { "<leader>st", "<cmd>TodoTelescope<cr>", desc = "Search Todos" }
-  }
+  config = function()
+    require("todo-comments").setup({})
+    vim.api.nvim_set_keymap("n", "<leader>st", "<cmd>TodoTelescope<cr>", { noremap = true, silent = true })
+  end,
 }
 -- PERF: full performance
 -- HACK: a new way to comments
